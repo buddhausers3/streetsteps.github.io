@@ -258,7 +258,7 @@ body{
 
 @font-face {
     font-family: "Horizon";
-    src: url("fonts/Horizon.otf") format("truetype");
+    src: url("Horizon.otf") format("truetype");
 }
 
 #products {
