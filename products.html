@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PT2.html</title>
+  <link rel="stylesheet" href="index.css">
+  </head>
+  
+
+  <body class="body">
+
+    <nav class="navbar">
+
+        <div class="logo">
+                        <a href="index.html"class="logo">STREETSTEPS</a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="gallery.html"class="active">Gallery</a></li>
+            <li><a href="products.html"class="active">Products</a></li>
+        </ul>
+
+        <div class="menu">
+
+            <button class="menu-btn">&#9776;</button>
+
+            <div class="dropdown">
+
+                <a href="products.html"class="active">Products</a>
+
+                <a href="contact.html"class="active">Contact Us</a>
+
+                <a href="about.html"class="active">About Us</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+  <h1 id="products"style="text-align:center;margin-top:60px;font-size:50px;">PRODUCTS</h1>
+  
+  <br><br>
+  
+  <hr>
+
+
+<div class="search-container">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search for shoes..."
+        onkeyup="searchProducts()">
+</div>
+
+
+
+<h2 class="checkout-title">Our Collection</h2>
+
+
+
+<div class="gallery1">
+
+    <!-- 1 -->
+    <div class="shoe-card">
+        <img src="images/AD.jpg" alt="ADIDAS SAMBA">
+        <h3>ADIDAS SAMBA</h3>
+        <p>Men's Shoes</p>
+        <span class="price">₱1599</span>
+        <button onclick="addToCheckout('ADIDAS SAMBA',1599,'images/AD.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- 2 -->
+    <div class="shoe-card">
+        <img src="images/AD2.jpg" alt="ADIDAS SPECIAL">
+        <h3>ADIDAS SPECIAL</h3>
+        <p>Classic Edition</p>
+        <span class="price">₱3500</span>
+        <button onclick="addToCheckout('ADIDAS SPECIAL',3500,'images/AD2.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- 3 -->
+    <div class="shoe-card">
+        <img src="images/AD3.png" alt="ADIDAS SAMBA GREEN">
+        <h3>ADIDAS SAMBA GREEN</h3>
+        <p>Limited Edition</p>
+        <span class="price">₱2000</span>
+        <button onclick="addToCheckout('ADIDAS SAMBA GREEN',2000,'images/AD3.png')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- 4 -->
+    <div class="shoe-card">
+        <img src="images/NIKE.jpg" alt="NIKE AIRFORCE">
+        <h3>NIKE AIRFORCE</h3>
+        <p>Classic White</p>
+        <span class="price">₱1599</span>
+        <button onclick="addToCheckout('NIKE AIRFORCE',1599,'images/NIKE.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- 5 -->
+    <div class="shoe-card">
+        <img src="images/NIKE2.jpg" alt="NIKE AIRFORCE RED">
+        <h3>NIKE AIRFORCE RED</h3>
+        <p>Red Edition</p>
+        <span class="price">₱1650</span>
+        <button onclick="addToCheckout('NIKE AIRFORCE RED',1650,'images/NIKE2.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- 6 -->
+    <div class="shoe-card">
+        <img src="images/NIKE3.png" alt="NIKE AIRFORCE BLUE">
+        <h3>NIKE AIRFORCE BLUE</h3>
+        <p>Blue Edition</p>
+        <span class="price">₱2300</span>
+        <button onclick="addToCheckout('NIKE AIRFORCE BLUE',2300,'images/NIKE3.png')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- 7 -->
+    <div class="shoe-card">
+        <img src="images/BPB.jpg" alt="BAPE BLACK">
+        <h3>BAPE BLACK</h3>
+        <p>Premium</p>
+        <span class="price">₱3000</span>
+        <button onclick="addToCheckout('BAPE BLACK',3000,'images/BPB.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- 8 -->
+    <div class="shoe-card">
+        <img src="images/APE.jpg" alt="BAPE BLUE">
+        <h3>BAPE BLUE</h3>
+        <p>Premium</p>
+        <span class="price">₱2400</span>
+        <button onclick="addToCheckout('BAPE BLUE',2400,'images/APE.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- 9 -->
+    <div class="shoe-card">
+        <img src="images/BPR.jpg" alt="BAPE RED">
+        <h3>BAPE RED</h3>
+        <p>Premium</p>
+        <span class="price">₱2000</span>
+        <button onclick="addToCheckout('BAPE RED',2000,'images/BPR.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- 10 -->
+    <div class="shoe-card">
+        <img src="images/NBB1.png" alt="NEW BALANCE BLACK">
+        <h3>NEW BALANCE BLACK</h3>
+        <p>Running Shoes</p>
+        <span class="price">₱2250</span>
+        <button onclick="addToCheckout('NEW BALANCE BLACK',2250,'images/NBB1.png')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- 11 -->
+    <div class="shoe-card">
+        <img src="images/NBB2.png" alt="NEW BALANCE BLUE">
+        <h3>NEW BALANCE BLUE</h3>
+        <p>Running Shoes</p>
+        <span class="price">₱2300</span>
+        <button onclick="addToCheckout('NEW BALANCE BLUE',2300,'images/NBB2.png')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- 12 -->
+    <div class="shoe-card">
+        <img src="images/NBR.png" alt="NEW BALANCE RED">
+        <h3>NEW BALANCE RED</h3>
+        <p>Running Shoes</p>
+        <span class="price">₱1999</span>
+        <button onclick="addToCheckout('NEW BALANCE RED',1999,'images/NBR.png')">
+            Add to Cart
+        </button>
+    </div>
+
+</div>
+
+<h2 class="checkout-title">Checkout</h2>
+
+<div id="checkout-container">
+
+    <div id="checkout-items">
+
+    </div>
+
+    <div class="checkout-total">
+        Total:
+        <span id="total-price">₱0</span>
+    </div>
+
+    <button id="buy-btn"
+    onclick="buyNow()">
+        Buy Now
+    </button>
+
+</div>
+
+
+
+<script src="index.js"></script>
+
+
+  <div id="popup" class="popup">
+    <div class="popup-box">
+        <h2 id="popup-message"></h2>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+            <h2 id="footer-logo">STREETSTEPS</h2>
+            <p>
+                Step into style with premium sneakers designed for
+                comfort, fashion, and everyday confidence.
+            </p>
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h3>Contact</h3>
+
+            <p>📍 Philippines</p>
+            <p>📞 +63 912 345 6789</p>
+            <p>📧 streetsteps@gmail.com</p>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h3>Follow Us</h3>
+            <a href="www.facebook.com">📘 Facebook</a>
+            <a href="www.instagram.com">📸 Instagram</a>
+            <a href="www.tiktok.com">🎵 TikTok</a>
+
+
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="copyright">
+
+        © 2026 STREETSTEPS. All Rights Reserved.
+
+    </div>
+
+</footer>
+</body>
+</html>
